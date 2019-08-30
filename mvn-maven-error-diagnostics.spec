@@ -4,7 +4,7 @@
 #
 Name     : mvn-maven-error-diagnostics
 Version  : 2.0.6
-Release  : 4
+Release  : 5
 URL      : https://repo1.maven.org/maven2/org/apache/maven/maven-error-diagnostics/2.0.6/maven-error-diagnostics-2.0.6.jar
 Source0  : https://repo1.maven.org/maven2/org/apache/maven/maven-error-diagnostics/2.0.6/maven-error-diagnostics-2.0.6.jar
 Source1  : https://repo1.maven.org/maven2/org/apache/maven/maven-error-diagnostics/2.0.1/maven-error-diagnostics-2.0.1.jar
@@ -12,14 +12,16 @@ Source2  : https://repo1.maven.org/maven2/org/apache/maven/maven-error-diagnosti
 Source3  : https://repo1.maven.org/maven2/org/apache/maven/maven-error-diagnostics/2.0.6/maven-error-diagnostics-2.0.6.pom
 Source4  : https://repo1.maven.org/maven2/org/apache/maven/maven-error-diagnostics/2.0.7/maven-error-diagnostics-2.0.7.jar
 Source5  : https://repo1.maven.org/maven2/org/apache/maven/maven-error-diagnostics/2.0.7/maven-error-diagnostics-2.0.7.pom
-Source6  : https://repo1.maven.org/maven2/org/apache/maven/maven-error-diagnostics/2.0.9/maven-error-diagnostics-2.0.9.jar
-Source7  : https://repo1.maven.org/maven2/org/apache/maven/maven-error-diagnostics/2.0.9/maven-error-diagnostics-2.0.9.pom
-Source8  : https://repo1.maven.org/maven2/org/apache/maven/maven-error-diagnostics/2.1.0/maven-error-diagnostics-2.1.0.jar
-Source9  : https://repo1.maven.org/maven2/org/apache/maven/maven-error-diagnostics/2.1.0/maven-error-diagnostics-2.1.0.pom
-Source10  : https://repo1.maven.org/maven2/org/apache/maven/maven-error-diagnostics/2.2.0/maven-error-diagnostics-2.2.0.jar
-Source11  : https://repo1.maven.org/maven2/org/apache/maven/maven-error-diagnostics/2.2.0/maven-error-diagnostics-2.2.0.pom
-Source12  : https://repo1.maven.org/maven2/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.jar
-Source13  : https://repo1.maven.org/maven2/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.pom
+Source6  : https://repo1.maven.org/maven2/org/apache/maven/maven-error-diagnostics/2.0.8/maven-error-diagnostics-2.0.8.jar
+Source7  : https://repo1.maven.org/maven2/org/apache/maven/maven-error-diagnostics/2.0.8/maven-error-diagnostics-2.0.8.pom
+Source8  : https://repo1.maven.org/maven2/org/apache/maven/maven-error-diagnostics/2.0.9/maven-error-diagnostics-2.0.9.jar
+Source9  : https://repo1.maven.org/maven2/org/apache/maven/maven-error-diagnostics/2.0.9/maven-error-diagnostics-2.0.9.pom
+Source10  : https://repo1.maven.org/maven2/org/apache/maven/maven-error-diagnostics/2.1.0/maven-error-diagnostics-2.1.0.jar
+Source11  : https://repo1.maven.org/maven2/org/apache/maven/maven-error-diagnostics/2.1.0/maven-error-diagnostics-2.1.0.pom
+Source12  : https://repo1.maven.org/maven2/org/apache/maven/maven-error-diagnostics/2.2.0/maven-error-diagnostics-2.2.0.jar
+Source13  : https://repo1.maven.org/maven2/org/apache/maven/maven-error-diagnostics/2.2.0/maven-error-diagnostics-2.2.0.pom
+Source14  : https://repo1.maven.org/maven2/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.jar
+Source15  : https://repo1.maven.org/maven2/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -71,29 +73,35 @@ cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-error-diagnostics/2.0.7
 cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-error-diagnostics/2.0.7/maven-error-diagnostics-2.0.7.pom
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-error-diagnostics/2.0.9
-cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-error-diagnostics/2.0.9/maven-error-diagnostics-2.0.9.jar
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-error-diagnostics/2.0.8
+cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-error-diagnostics/2.0.8/maven-error-diagnostics-2.0.8.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-error-diagnostics/2.0.8
+cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-error-diagnostics/2.0.8/maven-error-diagnostics-2.0.8.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-error-diagnostics/2.0.9
-cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-error-diagnostics/2.0.9/maven-error-diagnostics-2.0.9.pom
+cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-error-diagnostics/2.0.9/maven-error-diagnostics-2.0.9.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-error-diagnostics/2.0.9
+cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-error-diagnostics/2.0.9/maven-error-diagnostics-2.0.9.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-error-diagnostics/2.1.0
-cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-error-diagnostics/2.1.0/maven-error-diagnostics-2.1.0.jar
+cp %{SOURCE10} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-error-diagnostics/2.1.0/maven-error-diagnostics-2.1.0.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-error-diagnostics/2.1.0
-cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-error-diagnostics/2.1.0/maven-error-diagnostics-2.1.0.pom
+cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-error-diagnostics/2.1.0/maven-error-diagnostics-2.1.0.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-error-diagnostics/2.2.0
-cp %{SOURCE10} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-error-diagnostics/2.2.0/maven-error-diagnostics-2.2.0.jar
+cp %{SOURCE12} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-error-diagnostics/2.2.0/maven-error-diagnostics-2.2.0.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-error-diagnostics/2.2.0
-cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-error-diagnostics/2.2.0/maven-error-diagnostics-2.2.0.pom
+cp %{SOURCE13} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-error-diagnostics/2.2.0/maven-error-diagnostics-2.2.0.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-error-diagnostics/2.2.1
-cp %{SOURCE12} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.jar
+cp %{SOURCE14} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-error-diagnostics/2.2.1
-cp %{SOURCE13} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.pom
+cp %{SOURCE15} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.pom
 
 
 %files
@@ -107,6 +115,8 @@ cp %{SOURCE13} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven
 /usr/share/java/.m2/repository/org/apache/maven/maven-error-diagnostics/2.0.6/maven-error-diagnostics-2.0.6.pom
 /usr/share/java/.m2/repository/org/apache/maven/maven-error-diagnostics/2.0.7/maven-error-diagnostics-2.0.7.jar
 /usr/share/java/.m2/repository/org/apache/maven/maven-error-diagnostics/2.0.7/maven-error-diagnostics-2.0.7.pom
+/usr/share/java/.m2/repository/org/apache/maven/maven-error-diagnostics/2.0.8/maven-error-diagnostics-2.0.8.jar
+/usr/share/java/.m2/repository/org/apache/maven/maven-error-diagnostics/2.0.8/maven-error-diagnostics-2.0.8.pom
 /usr/share/java/.m2/repository/org/apache/maven/maven-error-diagnostics/2.0.9/maven-error-diagnostics-2.0.9.jar
 /usr/share/java/.m2/repository/org/apache/maven/maven-error-diagnostics/2.0.9/maven-error-diagnostics-2.0.9.pom
 /usr/share/java/.m2/repository/org/apache/maven/maven-error-diagnostics/2.1.0/maven-error-diagnostics-2.1.0.jar
